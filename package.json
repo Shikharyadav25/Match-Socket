@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/Shikharyadav25/Match-Studio#readme",
   "dependencies": {
+    "@arcjet/inspect": "^1.9.1",
+    "@arcjet/node": "^1.9.1",
     "dotenv": "^17.4.2",
     "drizzle-orm": "^0.45.2",
     "express": "^5.2.1",
