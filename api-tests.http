@@ -25,3 +25,42 @@ Content-Type: application/json
     "startTime": "2026-07-15T01:45:00+00:00",
     "endTime": "2026-07-15T03:43:00+00:00"
 }
+
+
+###
+GET http://localhost:8000/matches
+
+###
+POST http://localhost:8000/matches/3/commentary
+Content-Type: application/json
+
+{
+  "minute": 42,
+  "sequence": 120,
+  "period": "2nd half",
+  "eventType": "goal",
+  "actor": "Alex Morgan",
+  "team": "FC Neon",
+  "message": "GOAL! Powerful finish from the edge of the box.",
+  "metadata": { "assist": "Sam Kerr" },
+  "tags": ["goal", "shot"]
+}
+
+###
+GET http://localhost:8000/matches/3/commentary
+
+###
+POST http://localhost:8000/matches/2/commentary
+Content-Type: application/json
+
+{
+  "minute": 42,
+  "sequence": 120,
+  "period": "3nd half",
+  "eventType": "goal",
+  "actor": "Alex Morgan",
+  "team": "FC Neon",
+  "message": "GOAL! Powerful finish from the edge of the box.",
+  "metadata": { "assist": "Sam Kerr" },
+  "tags": ["goal", "shot"]
+}

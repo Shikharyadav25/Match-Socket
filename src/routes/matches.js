@@ -4,6 +4,7 @@ import { matches } from "../db/schema.js";
 import { db } from "../db/db.js";
 import { getMatchStatus } from '../utils/match-status.js';
 import { desc } from 'drizzle-orm';
+import { Result } from 'pg';
 
 export const matchRouter = Router();
 
@@ -36,7 +37,7 @@ matchRouter.post('/', async (req, res) => {
 
     const { startTime, endTime, homeScore, awayScore } = parsed.data;
     try {
-        const [event] = await db.insert(matches).values({
+        const [result] = await db.insert(matches).values({
             ...parsed.data,
             startTime: new Date(startTime),
             endTime: new Date(endTime),
@@ -46,11 +47,11 @@ matchRouter.post('/', async (req, res) => {
         }).returning();
 
         if(res.app.locals.broadcastMatchCreated){
-            res.app.locals.broadcastMatchCreated(event);
+            res.app.locals.broadcastMatchCreated(result);
         }
 
-        res.status(201).json({ data: event });
+        res.status(201).json({ data: result });
     } catch (e) {
-        res.status(500).json({ error: 'Failed to create match', details: JSON.stringify(e) });
+        res.status(500).json({ error: 'Failed to create match', details: e?.message || String(e) });
     }
 })
