@@ -8,6 +8,8 @@
     "start": "node src/index.js",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
+    "db:seed": "node src/seed/seed.js",
+    "seed": "node src/seed/seed.js",
     "db:studio": "drizzle-kit studio",
     "demo": "node src/crud-demo.js"
   },
@@ -26,6 +28,7 @@
   "dependencies": {
     "@arcjet/inspect": "^1.9.1",
     "@arcjet/node": "^1.9.1",
+    "apminsight": "^5.5.1",
     "dotenv": "^17.4.2",
     "drizzle-orm": "^0.45.2",
     "express": "^5.2.1",
