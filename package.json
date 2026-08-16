@@ -1,5 +1,5 @@
 {
-  "name": "match-socket",
+  "name": "matchsocket",
   "version": "1.0.0",
   "description": "A production-grade, highly resilient real-time sports dashboard that broadcasts live match scores and ball-by-ball commentary to connected clients over WebSockets. The system features a selective subscribe/unsubscribe protocol, a type-safe database layer, strict validation schemas, bot protection, and uptime/APM monitoring.",
   "main": "src/index.js",
