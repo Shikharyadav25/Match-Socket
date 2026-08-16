@@ -15,16 +15,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shikharyadav25/Match-Studio.git"
+    "url": "git+https://github.com/Shikharyadav25/MatchSocket.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/Shikharyadav25/Match-Studio/issues"
+    "url": "https://github.com/Shikharyadav25/MatchSocket/issues"
   },
-  "homepage": "https://github.com/Shikharyadav25/Match-Studio#readme",
+  "homepage": "https://github.com/Shikharyadav25/MatchSocket#readme",
   "dependencies": {
     "@arcjet/inspect": "^1.9.1",
     "@arcjet/node": "^1.9.1",

@@ -392,8 +392,8 @@ npm run seed
 
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/Shikharyadav25/Match-Studio.git
-    cd Match-Studio
+    git clone https://github.com/Shikharyadav25/MatchSocket.git
+    cd MatchSocket
     ```
 
 2.  **Install Dependencies**:
