@@ -1,4 +1,4 @@
-# 🏆 Match Studio
+# 🏆 MatchSocket
 
 A production-grade, highly resilient real-time sports dashboard API that broadcasts live match scores and ball-by-ball commentary to connected clients over WebSockets. The system features a selective subscribe/unsubscribe protocol, a type-safe database layer, strict validation schemas, bot protection, and APM monitoring.
 
@@ -392,8 +392,8 @@ npm run seed
 
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/Shikharyadav25/Match-Studio.git
-    cd Match-Studio
+    git clone https://github.com/Shikharyadav25/MatchSocket.git
+    cd MatchSocket
     ```
 
 2.  **Install Dependencies**:
@@ -456,7 +456,7 @@ An `api-tests.http` file is included in the project root for use with REST clien
 ## 📁 Project Structure
 
 ```
-Match-Studio/
+MatchSocket/
 ├── drizzle/                    # Generated SQL migration files
 │   └── 0000_*.sql
 ├── drizzle.config.js           # Drizzle Kit configuration

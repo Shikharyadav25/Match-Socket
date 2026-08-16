@@ -1,5 +1,5 @@
 {
-  "name": "score-dashboard",
+  "name": "matchsocket",
   "version": "1.0.0",
   "description": "A production-grade, highly resilient real-time sports dashboard that broadcasts live match scores and ball-by-ball commentary to connected clients over WebSockets. The system features a selective subscribe/unsubscribe protocol, a type-safe database layer, strict validation schemas, bot protection, and uptime/APM monitoring.",
   "main": "src/index.js",
@@ -15,16 +15,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shikharyadav25/Match-Studio.git"
+    "url": "git+https://github.com/Shikharyadav25/MatchSocket.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/Shikharyadav25/Match-Studio/issues"
+    "url": "https://github.com/Shikharyadav25/MatchSocket/issues"
   },
-  "homepage": "https://github.com/Shikharyadav25/Match-Studio#readme",
+  "homepage": "https://github.com/Shikharyadav25/MatchSocket#readme",
   "dependencies": {
     "@arcjet/inspect": "^1.9.1",
     "@arcjet/node": "^1.9.1",
