@@ -18,7 +18,7 @@ app.use(express.json());
 
 // Root GET route returning a short message
 app.get('/', (req, res) => {
-  res.send('Welcome to the Match Studio API!');
+  res.send('Welcome to the Match Socket API!');
 });
 
 app.use(securityMiddleware());
